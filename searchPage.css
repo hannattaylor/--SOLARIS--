@@ -1,0 +1,199 @@
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      0.25turn,
+      rgba(3, 3, 19, 0.931),
+      rgba(22, 22, 66, 0.8)
+    ),
+    url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
+  background-size: 100%;
+  background-color: rgb(4, 4, 22);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  z-index: -1;
+}
+main {
+  height: 100%;
+}
+
+/*BACKGRUNDSVIDEO*/
+#star-video {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*HEADER*/
+#go-to-start-wrap {
+  z-index: 20;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#go-to-start-wrap:hover .btn {
+  color: white;
+}
+
+#go-to-start-wrap:hover #comet-img {
+  transform: scale(120%);
+}
+
+.btn {
+  transition: color ease-in 0.1s;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+}
+
+#comet-img {
+  transition: ease-in 0.1s;
+  z-index: 50;
+  width: 4rem;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*SÖKRUTAN*/
+#search {
+  position: relative;
+  top: -3rem;
+  left: calc(100% / 2 - 7rem);
+  width: 14rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgba(54, 48, 73, 0.281);
+  border-color: rgb(140 131 180);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+  outline: none;
+}
+
+#search::placeholder {
+  font-size: 1.2rem;
+  color: #665d8b;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+/*SÖKRESULTATET*/
+#planet-search-box {
+  display: flex;
+  width: 50vw;
+  margin: 0 auto 2rem auto;
+}
+
+/* #search-results-wrap {
+  height: 40%;
+} */
+
+#planet-article {
+  display: flex;
+  width: 50vw;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  transform: translateX(-40em, initial);
+}
+
+#planet-article:hover #planet-img {
+  transform: scale(130%);
+}
+
+#planet-img {
+  margin-right: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  transition: transform 0.2s;
+}
+
+#planet-name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#planet-name span {
+  font-weight: 200;
+  color: rgb(102, 93, 139);
+}
+
+#planet-desc {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/*PAGINATIONEN*/
+#pagination-wrap {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 40vw;
+  bottom: 4rem;
+  left: calc(100% / 2 - 20vw);
+  text-align: center;
+}
+
+#pagination-wrap button {
+  width: 2.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin: 0 0.2rem;
+  border: none;
+}
+
+.active {
+  background-color: rgb(102, 93, 139);
+  color: white;
+}
+
+#no-match {
+  text-align: center;
+}
+
+/*EASTER-ALIEN*/
+#alien {
+  position: absolute;
+  left: -18rem;
+  width: 20rem;
+}
+
+@keyframes alienDance {
+  from {
+    transform: translateX(initial);
+  }
+
+  10% {
+    transform: translateX(40rem) rotate(20deg);
+  }
+
+  20% {
+    transform: translateY(20rem) translateX(30rem) rotate(-40deg);
+  }
+
+  30% {
+    transform: translateY(-20rem) translateX(60rem) rotate(60deg);
+  }
+
+  40% {
+    transform: translateY(10rem) translateX(80rem) rotate(-20deg);
+  }
+
+  60% {
+    transform: translateY(-20rem) translateX(50rem) rotate(360deg);
+  }
+
+  to {
+    transform: translateX(initial);
+  }
+}

@@ -1,0 +1,244 @@
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(0.25turn, rgba(3, 3, 19, 0.931), rgb(16 16 59 / 80%)), url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
+    background-size: 150%;
+    background-color: rgb(4, 4, 22);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: end;
+}
+
+
+
+/* H1 & H2 */
+#solsystemet {
+    margin: 2rem 2rem 0.5rem 0;
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+    z-index: 9;
+    cursor: pointer;
+}
+
+#solaris {
+    margin: 0 2rem 0 0;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    color: rgb(102, 93, 139);
+    z-index: 9;
+}
+
+
+
+
+/* TRANSFORM OCH HOVER FÖR PLANETERNA*/
+#orbit-1,
+#orbit-2,
+#orbit-3,
+#orbit-4,
+#orbit-5,
+#orbit-6,
+#orbit-7,
+#orbit-8 {
+    position: absolute;
+    border: 1px solid #20202e;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 10s linear;
+}
+
+.mercury-img,
+.venus-img,
+.earth-img,
+.mars-img,
+.jupiter-img,
+.saturn-img,
+.uranus-img,
+.neptune-img {
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 10s linear;
+}
+
+.mercury-img:hover,
+.venus-img:hover,
+.earth-img:hover,
+.mars-img:hover,
+.jupiter-img:hover,
+.saturn-img:hover,
+.uranus-img:hover,
+.neptune-img:hover {
+    transform: rotate(480deg)
+}
+
+.sun-img:hover {
+    transform: rotate(120deg);
+}
+
+.sun-img {
+    position: absolute;
+    transition: transform 2s;
+    cursor: pointer;
+    width: 40rem;
+    top: 5rem;
+    left: -25rem;
+    z-index: 8;
+}
+
+
+
+
+
+/* POSITION PÅ VARJE HIMLAKROPP OCH SIN OMLOPPSBANA */
+#orbit-1 {
+    top: 0;
+    left: -30rem;
+    width: 50rem;
+    height: 50rem;
+    z-index: 7;
+}
+
+.mercury-img {
+    width: 3rem;
+    top: 23.5rem;
+    right: -1.5rem;
+
+}
+
+#orbit-2 {
+    top: -2.5rem;
+    left: -29rem;
+    width: 55rem;
+    height: 55rem;
+    z-index: 6;
+}
+
+.venus-img {
+    width: 5rem;
+    top: 25rem;
+    right: -2.5rem;
+}
+
+#orbit-3 {
+    top: -5rem;
+    left: -27rem;
+    width: 60rem;
+    height: 60rem;
+    z-index: 5;
+}
+
+.earth-img {
+    width: 5rem;
+    top: 27.5rem;
+    right: -2.5rem;
+}
+
+#orbit-4 {
+    top: -7.5rem;
+    left: -26rem;
+    width: 65rem;
+    height: 65rem;
+    z-index: 4;
+}
+
+.mars-img {
+    width: 3rem;
+    top: 31rem;
+    right: -1.5rem;
+}
+
+#orbit-5 {
+    top: -10rem;
+    left: -22rem;
+    width: 70rem;
+    height: 70rem;
+    z-index: 3;
+}
+
+.jupiter-img {
+    width: 10rem;
+    top: 30rem;
+    right: -5rem;
+}
+
+#orbit-6 {
+    top: -12.5rem;
+    left: -15rem;
+    width: 75rem;
+    height: 75rem;
+    z-index: 2;
+}
+
+.saturn-img {
+    width: 9rem;
+    top: 33rem;
+    right: -4.5rem;
+}
+
+#orbit-7 {
+    top: -15rem;
+    left: -10rem;
+    width: 80rem;
+    height: 80rem;
+    z-index: 1;
+}
+
+.uranus-img {
+    width: 5rem;
+    top: 37.5rem;
+    right: -2.5rem;
+}
+
+#orbit-8 {
+    top: -17.5rem;
+    left: -8rem;
+    width: 85rem;
+    height: 85rem;
+}
+
+.neptune-img {
+    width: 4rem;
+    top: 40.5rem;
+    right: -2rem;
+}
+
+
+
+/* SÖKFÄLT PÅ STARTSIDA */
+#search {
+    width: 14rem;
+    margin: 0 auto;
+    z-index: 10;
+    position: absolute;
+    bottom: 3rem;
+    left: calc(100%/2 - 7rem);
+    padding: 1.5rem;
+    background-color: rgba(54, 48, 73, 0.281);
+    border-color: rgb(140 131 180);
+    border-radius: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    outline: none;
+}
+
+#search::placeholder {
+    font-size: 1.3rem;
+    color: rgb(102, 93, 139);
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
